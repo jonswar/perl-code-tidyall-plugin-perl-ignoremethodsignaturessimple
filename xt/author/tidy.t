@@ -1,8 +1,6 @@
 #!/usr/bin/perl
-use Code::TidyAll::Util qw(read_file tempdir_simple write_file);
+use Code::TidyAll::Util qw(dirname mkpath read_file tempdir_simple write_file);
 use Code::TidyAll;
-use File::Basename;
-use File::Path;
 use Test::More;
 use Capture::Tiny qw(capture_merged);
 
