@@ -2,7 +2,7 @@ Revision history for Code-TidyAll-Plugin-Perl-IgnoreMethodSignaturesSimple
 
 ** denotes an incompatible change
 
-0.02  Aug 5, 2012
+0.02  Aug 24, 2012
 
 - Make more robust for different brace/newline styles
 - Eliminate spaces inside parens
