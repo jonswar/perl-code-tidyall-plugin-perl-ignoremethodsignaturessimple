@@ -17,7 +17,10 @@ sub postprocess_source {
 
     foreach my $id ( keys( %{ $self->{saves} } ) ) {
         my ( $keyword, $name, $rest ) = @{ $self->{saves}->{$id} };
+        for ( $name, $rest ) { s/^\s+//; s/\s+$// }
         $rest = '()' if $rest !~ /\S/;
+        $rest   =~ s/\(\s+/\(/;
+        $rest   =~ s/\s+\)/\)/;
         $source =~ s/sub MUNGED_${id}_/$keyword $name $rest/;
     }
 
@@ -27,7 +30,6 @@ sub postprocess_source {
 sub _munged_sub {
     my ( $self, $keyword, $name, $rest ) = @_;
 
-    for ( $name, $rest ) { s/^\s+//; s/\s+$// }
     my $id = $self->_unique_id;
     $self->{saves}->{$id} = [ $keyword, $name, $rest ];
     return "sub MUNGED_${id}_ {";

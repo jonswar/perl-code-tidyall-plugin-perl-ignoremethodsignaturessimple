@@ -4,7 +4,8 @@ Revision history for Code-TidyAll-Plugin-Perl-IgnoreMethodSignaturesSimple
 
 0.02  Aug 5, 2012
 
+- Make more robust for different brace/newline styles
+
 0.01  Aug 5, 2012
 
 - Initial version
-

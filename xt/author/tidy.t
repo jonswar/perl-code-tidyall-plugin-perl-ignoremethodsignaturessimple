@@ -25,12 +25,12 @@ method foo   {
  print "hi\n";
 }
 
-method bar   ($x)   {
+method bar   ( $x )   {
  print "$x\n";
 }
 
 
-method baz   ($y, $z)   {
+method baz   (  $y, $z)   {
  print "$y, $z\n";
 }
 
@@ -39,7 +39,7 @@ method foo2
  print "hi\n";
 }
 
-method bar2   ($x)  
+method bar2   ($x  )  
 {
  print "$x\n";
 }
