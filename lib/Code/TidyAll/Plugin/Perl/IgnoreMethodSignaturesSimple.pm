@@ -18,9 +18,16 @@ sub postprocess_source {
     foreach my $id ( keys( %{ $self->{saves} } ) ) {
         my ( $keyword, $name, $rest ) = @{ $self->{saves}->{$id} };
         for ( $name, $rest ) { s/^\s+//; s/\s+$// }
+
+        # Blank parens if no params list
+        #
         $rest = '()' if $rest !~ /\S/;
-        $rest   =~ s/\(\s+/\(/;
-        $rest   =~ s/\s+\)/\)/;
+
+        # No space inside parens
+        #
+        $rest =~ s/\(\s+/\(/;
+        $rest =~ s/\s+\)/\)/;
+
         $source =~ s/sub MUNGED_${id}_/$keyword $name $rest/;
     }
 
