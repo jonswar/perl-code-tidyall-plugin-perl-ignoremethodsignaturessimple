@@ -7,7 +7,7 @@ sub preprocess_source {
     my ( $self, $source ) = @_;
 
     $source =~
-      s/^(method|func)\s+(\w+)([^\{]+)\{/$self->_munged_sub($1, $2, $3)/gme;
+      s/^\h*(method|func)\s+(\w+)([^\{]+)\{/$self->_munged_sub($1, $2, $3)/gme;
 
     return $source;
 }
