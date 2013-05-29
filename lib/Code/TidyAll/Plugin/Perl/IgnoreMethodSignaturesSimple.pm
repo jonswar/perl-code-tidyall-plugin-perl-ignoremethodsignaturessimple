@@ -86,13 +86,13 @@ Questions and feedback are welcome, and should be directed to the author.
 
 Bugs and feature requests will be tracked at RT:
 
-    http://rt.cpan.org/NoAuth/Bugs.html?Dist=Code-TidyAll-Plugin-Perl-AlignMooseAttributes
-    bug-code-tidyall-plugin-perl-alignmooseattributes@rt.cpan.org
+    http://rt.cpan.org/NoAuth/Bugs.html?Dist=Code-TidyAll-Plugin-Perl-IgnoreMethodSignaturesSimple
+    bug-code-tidyall-plugin-perl-ignoremethodsignaturessimple@rt.cpan.org
 
 The latest source code can be browsed and fetched at:
 
-    http://github.com/jonswar/perl-code-tidyall-plugin-perl-alignmooseattributes
-    git clone git://github.com/jonswar/perl-code-tidyall-plugin-perl-alignmooseattributes.git
+    https://github.com/jonswar/perl-code-tidyall-plugin-perl-ignoremethodsignaturessimple
+    git clone git://github.com/jonswar/perl-code-tidyall-plugin-perl-ignoremethodsignaturessimple.git
 
 =head1 SEE ALSO
 
