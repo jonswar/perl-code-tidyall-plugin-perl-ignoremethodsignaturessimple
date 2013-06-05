@@ -4,6 +4,8 @@ Revision history for Code-TidyAll-Plugin-Perl-IgnoreMethodSignaturesSimple
 
 0.03  Aug 24, 2012
 
+- Allow method/func's to be indented - Pedro Melo
+
 0.02  Aug 24, 2012
 
 - Make more robust for different brace/newline styles
