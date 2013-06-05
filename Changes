@@ -2,7 +2,7 @@ Revision history for Code-TidyAll-Plugin-Perl-IgnoreMethodSignaturesSimple
 
 ** denotes an incompatible change
 
-0.03  Aug 24, 2012
+0.03  Jun 5, 2013
 
 - Allow method/func's to be indented - Pedro Melo
 
